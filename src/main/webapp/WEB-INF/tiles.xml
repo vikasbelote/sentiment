@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-definition" template="/WEB-INF/views/layout.jsp">  
+       <put-attribute name="title" value="Network" />   
+       <put-attribute name="body" value="" />  
+   </definition>  
+   
+    
+   <definition name="body" extends="base-definition">
+       <put-attribute name="body" value="/WEB-INF/views/body.jsp" />  
+   </definition>
+   
+   <definition name="master" extends="base-definition">
+       <put-attribute name="body" value="/WEB-INF/views/master.jsp" />  
+   </definition>
+   
+</tiles-definitions>
